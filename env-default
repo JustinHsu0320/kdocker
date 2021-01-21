@@ -853,7 +853,7 @@ GRAFANA_PLUGINS=grafana-image-renderer
 ## the following setting is only required for image renderer plugin
 GRAFANA_RENDERING_SERVER_URL=http://grafana-render:8081/render
 # the port number should match the export port number of grafana-rander server
-GRAFANA_RENDERING_CALLBACK_URL=http://grafana:3001
+GRAFANA_RENDERING_CALLBACK_URL=http://grafana:3000/
 # the port number should match the export port number of its external port
 GRAFANA_LOG_FILTER=rendering:debug
 
