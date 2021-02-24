@@ -1034,6 +1034,11 @@ services:
     networks:
       - backend
       - frontend
+    logging:
+      driver: syslog
+      options:
+        syslog-address: ${LOGSTASH_HOST}
+        tag: tw-app-grafana-monthly-report
 
   grafana-render:
     image: grafana/grafana-image-renderer:latest
@@ -1053,6 +1058,11 @@ services:
     restart: ${GRAFANA_RENDER_RESTART:-always}
     networks:
       - frontend
+    logging:
+      driver: syslog
+      options:
+        syslog-address: ${LOGSTASH_HOST}
+        tag: tw-app-grafana-rendering
 
 volumes:
   postgres_data:

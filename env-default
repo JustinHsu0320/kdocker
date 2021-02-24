@@ -909,3 +909,8 @@ PHP_IDE_CONFIG=serverName=kimer
 
 # Fix for windows user to make sure the application path works
 COMPOSE_CONVERT_WINDOWS_PATHS=1
+
+#####################################
+# LOGGING
+#####################################
+LOGSTASH_HOST=tcp://172.31.251.110:5000
